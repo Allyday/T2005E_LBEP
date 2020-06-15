@@ -14,7 +14,7 @@ int main()
 
   for (int i = 0; i < 10; i++)
   {
-    if (nums[i] % 2 != 0 && (maxOdd % 2 == 0 && nums[i] > maxOdd))
+    if (nums[i] % 2 != 0 && (maxOdd % 2 == 0 || nums[i] > maxOdd))
     {
       maxOdd = nums[i];
     }
